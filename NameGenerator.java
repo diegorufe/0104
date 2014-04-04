@@ -7,8 +7,12 @@
  */
 public class NameGenerator
 {
-    // instance variables - replace the example below with your own
-
+    private static final int  SUB_0 = 0;
+    private static final int   SUB_1 = 1;
+    private static final int  SUB_2 = 2;
+    private static final int SUB_3 = 3;
+    
+    
     /**
      * Constructor for objects of class NameGenerator
      */
@@ -24,8 +28,8 @@ public class NameGenerator
      */
     public String generateStarWarsName(String apellido,String nombre,String apellidoMadre,String ciudadNacimiento)
     {
-        String nombrePelicula = apellido.substring(0, 1). toUpperCase();
-        nombrePelicula +=apellido.substring(1, 3)+nombre.substring(0, 3)+apellidoMadre.substring(0, 2)+ciudadNacimiento.substring(0, 3);
+        String nombrePelicula = apellido.substring(SUB_0, SUB_1). toUpperCase();
+        nombrePelicula +=apellido.substring(SUB_1, SUB_3)+nombre.substring(SUB_0, SUB_3)+apellidoMadre.substring(SUB_0,  SUB_2)+ciudadNacimiento.substring(SUB_0, SUB_3);
         return nombrePelicula;
     }
 }
